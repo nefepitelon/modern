@@ -1,0 +1,492 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url();     /* Fondo blanco */
+}
+
+.courgette-regular {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+
+header {
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-image: url(../img/fondomenu3.png); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el header */
+    background-position: center; /* Centra la imagen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white; /* Cambia el color del texto en el header a blanco */
+}
+
+header .logo {
+    width: 113px;
+
+}
+
+.header-custom {
+    background-color: transparent; /* Deja transparente ya que la imagen de fondo está establecida */
+    color: white; /* Asegúrate de que el texto sea blanco */
+    transform: translateY(0);
+    transition: transform 0.3s ease; /* Ajusta el tiempo y la velocidad a tu gusto */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top: 0;
+    height: 11%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.hide-header {
+    transform: translateY(-100%);
+}
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.collapse.navbar-collapse {
+    
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column; /* Para mostrar los elementos del menú en columna al colapsar */
+    align-items: flex-start;
+    padding: 10px;
+}
+
+
+
+.social-icons-vertical {
+    position: fixed;
+    top: 300%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+  
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.social-icons-vertical a {
+    margin: 10px 0; /* Espacio entre los iconos */
+    color: #333; /* Color del icono */
+    font-size: 24px; /* Tamaño del icono */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons-vertical a:hover {
+    color: #007bff; /* Color al pasar el cursor */
+}
+
+.social-icons-vertical i {
+    display: block;
+}
+
+
+.social-icons-vertical a {
+    font-size: 1.5rem;
+    margin: 5px 5px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-decoration: none;
+}
+
+.social-icons-vertical .tiktok {
+    background-color: black;
+    color: white;
+}
+
+.social-icons-vertical .instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white;
+}
+
+.social-icons-vertical .facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.social-icons-vertical .whatsapp {
+    background-color: #25d366;
+    color: white;
+}
+
+main {
+    padding-top: 5%; 
+}
+
+.logoCabeza {
+    display: flex;
+    justify-content: center; /* Centra el logo horizontalmente */
+    align-items: center; /* Centra el logo verticalmente */
+    height: 100%; /* Ajusta la altura del contenedor según sea necesario */
+}
+
+.logoCabeza img.logo {
+
+    margin: 20% 0 0 0;
+}
+.vidNosot {
+    text-align: center;
+}
+.vidNosot video {
+    height: 400px;
+    width: 80%;
+}
+.content {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo claro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra difuminada */
+  }
+
+  .content p {
+    font-size: 1.2em;
+  color: #495057; /* Color de texto gris oscuro */
+  margin: px 0;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+  /* Estilo para los íconos */
+  .content p i {
+    margin-right: 12px;
+    color: #6c757d; /* Color de iconos gris */
+    font-size: 1.5em; /* Tamaño del icono */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+  }
+  
+  
+  /* Efecto hover en los íconos */
+ #maps:hover {
+    color: #e40f0f; /* Color azul al hacer hover */
+    transform: scale(1.1); /* Ampliación del icono */
+  }
+  #fone:hover {
+    color: #130fe4; /* Color azul al hacer hover */
+    transform: scale(1.1); /* Ampliación del icono */
+  }
+  
+  
+  /* Estilo para los enlaces */
+  .content p a {
+    color: #007BFF; /* Azul inicial */
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Borde inferior invisible */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Transición */
+  }
+  
+  /* Efecto hover en los enlaces */
+  p a:hover {
+    color: #0056b3; /* Azul más oscuro */
+    border-bottom-color: #0056b3; /* Borde inferior visible */
+  }
+  
+  /* Estilo para íconos específicos con clases fas */
+  .fas.fa-map-marker-alt, .fas.fa-phone-alt {
+    font-size: 1.6em;
+  }
+  
+  /* Efecto de sombra y difuminación en la tarjeta de contacto */
+  .content:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    transition: box-shadow 0.1s ease; /* Transición suave de sombra */
+  }
+  .whatsappp {
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    line-height: 14px;
+}
+.whatsappp i {
+    font-size: 1.9rem;
+    
+    
+}
+.whatsappp:hover {
+    background-color: #1EBE53;
+    color: rgb(233, 227, 227);
+}
+.whatsappp i:hover {
+    
+    color: rgb(233, 227, 227);
+}
+ .conwhat {
+    display: flex;    
+ }
+ .tex {
+    
+    margin:3%; 
+ }
+
+main img.mascota {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.intro text {
+    margin: auto;
+}
+
+.text-black {
+    color: rgb(243, 243, 243) !important; /* Asegúrate de que el texto sea negro */
+}
+
+.padre {
+    display: flex; /* Hace que los hijos se alineen en una fila */
+    border-radius: 15px;
+    padding: 20px;
+    background-image: url(../img/fondomenu4.png);
+    background-size: 100%; 
+    border: 5px solid #bad5f6;
+    padding: 1%;
+    width: 100%;
+}
+
+.contenedor {
+    flex: 1; /* Hace que los contenedores ocupen el mismo espacio */
+    margin: auto; /* Opcional, añade espacio entre los contenedores */
+    
+}
+
+/* Centrar las imágenes en el carrusel */
+.carousel-inner {
+    display: flex;
+    margin: auto;
+}
+
+/* Define el tamaño del contenedor del carrusel */
+.carousel-item {
+    max-height: 300px; /* Ajusta esta altura según tus necesidades */
+    overflow: hidden;
+}
+
+/* Ajusta el tamaño de las imágenes del carrusel */
+.carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+    margin:auto; /* Centra la imagen horizontalmente */
+    border-radius: 10px;
+    border: 5px solid #231b52;
+    padding: 1%;
+}
+
+/* Ajustar los botones de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Ajusta el ancho de los botones */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 100%, 100%; /* Asegura que los iconos se mantengan dentro de los botones */
+}
+
+
+.conMascota {
+    display: flex; /* Hace que los hijos se alineen en una fila */
+}
+
+.conMasc {
+    display: flex;
+    margin: auto;
+}
+
+
+
+/* Oculta todas las secciones por defecto */
+.product-section {
+    display: none;
+}
+
+/* Estilo para los botones */
+.btn-primary {
+    margin: 5px 5px;
+}
+
+.Botones {
+
+}
+/* Estilo para videos e imágenes en secciones de productos */
+.product-section img,
+.product-section video {
+    max-width: 20%; /* Ajusta este valor según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen o video */
+    margin: 1rem; /* Añade un margen para separar los elementos */
+    } 
+
+.product-section .ventana {
+    max-width: 35%; /* Ajusta el tamaño máximo al 30% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen o video */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.product-section .claraboya {
+    max-width: 26%; /* Ajusta el tamaño máximo al 30% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen o video */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.product-section .salpicadero {
+    max-width: 50%; /* Ajusta el tamaño máximo al 30% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen o video */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+    
+.product-section .espejo {
+    max-width: 26%; /* Ajusta el tamaño máximo al 30% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen o video */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.product-section .repisa {
+    max-width: 23%; /* Ajusta el tamaño máximo al 30% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen o video */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.product-section .cortaviento {
+    max-width: 25%; /* Ajusta el tamaño máximo al 30% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen o video */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.product-section .encerramiento {
+    max-width: 35%; /* Ajusta el tamaño máximo al 30% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen o video */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.product-section.show {
+    display: block;
+}
+
+.social-icons-footer a {
+    font-size: 1.5rem;
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.social-icons-footer a i {
+    margin: 0;
+}
+
+.social-icons-footer .tiktok {
+    background-color: black;
+    color: white;
+}
+
+.social-icons-footer .instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white;
+}
+
+.social-icons-footer .facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.social-icons-footer .whatsapp {
+    background-color: #25d366;
+    color: white;
+}
+.footer {
+    background-image: url(../img/fondomenu8.png);
+    color: #fff;
+    padding: 1% 0;
+    text-align: center;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer .container div {
+    flex: 1;
+    margin: 1%;
+    min-width: 200px;
+}
+.footer h4 {
+    font-family: 'Cursive', sans-serif;
+    margin-bottom: 20px;
+    font-size: 0.900rem;
+}
+.footer p, .footer a {
+    color: #fff;
+    font-size: 0.800rem;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 985px) {
+    .padre {
+        flex-direction: column;
+    }
+    .conMascota {
+        flex-direction: column;
+    }
+    .collapse.navbar-collapse {
+        background-image: url(../img/fondomenu8.png);
+    }
+    
+}
