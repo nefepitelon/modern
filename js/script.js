@@ -46,12 +46,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Intentar activar el sonido cuando el video esté en la vista
     const playVideoWithSound = () => {
         if (video.muted) {
-            video.muted = false;
-            video.play();
+            video.muted = false
         }
     };
 
     // Desactivar el silencio en el primer clic o desplazamiento del usuario
     document.addEventListener('click', playVideoWithSound, { once: true });
-    document.addEventListener('scroll', playVideoWithSound, { once: true });
+   
 });
+

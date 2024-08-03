@@ -25,8 +25,14 @@ header {
     color: white; /* Cambia el color del texto en el header a blanco */
 }
 
+.A-logo {
+   width: 11%;
+   height: auto;
+   
+}
+
 header .logo {
-    width: 113px;
+    width: 100%;
 
 }
 
@@ -55,15 +61,14 @@ header .logo {
 }
 
 .navbar-toggler {
-    margin-left: auto;
+    margin-right: auto;
 }
 
 .collapse.navbar-collapse {
     
     top: 100%;
-    left: 0;
-    right: 0;
-
+    left: 0%;
+    right: 0%;
     z-index: 1000; /* Asegúrate de que el menú esté por encima de otros elementos */
     width: 100%;
 }
@@ -283,7 +288,7 @@ section img {
     display: flex; /* Hace que los hijos se alineen en una fila */
     border-radius: 15px;
     padding: 20px;
-    background-image: url(../img/fondomenu4.png);
+    background-image: url(../img/fondomenu11.png);
     background-size: 100%; 
     border: 5px solid #bad5f6;
     padding: 1%;
@@ -488,5 +493,9 @@ section img {
     .collapse.navbar-collapse {
         background-image: url(../img/fondomenu8.png);
     }
-    
+    .A-logo {
+        margin: 0 3% 0 0;
+    }
 }
+
+
